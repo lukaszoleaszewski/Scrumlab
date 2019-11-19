@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', IndexView.as_view()),
     path('recipe/list/', recipes),
-    path('main/', dashboard)
+    path('main/', dashboard),
 ]
