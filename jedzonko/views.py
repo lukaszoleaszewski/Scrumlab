@@ -13,4 +13,4 @@ class IndexView(View):
 
 
 def recipes(request):
-    return render(request, "recipe/list/app-recipes.html")
+    return render(request, "app-recipes.html")
