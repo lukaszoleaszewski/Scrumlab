@@ -14,3 +14,6 @@ class IndexView(View):
 
 def recipes(request):
     return render(request, "app-recipes.html")
+
+def dashboard(request):
+    return render(request, "dashboard.html")
