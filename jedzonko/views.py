@@ -16,4 +16,5 @@ def recipes(request):
     return render(request, "app-recipes.html")
 
 def dashboard(request):
-    return render(request, "dashboard.html")
+    recipes = Recipe.objects.count()
+    return render(request, "dashboard.html", context={"recipes": recipes,})
